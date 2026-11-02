@@ -4,5 +4,6 @@
 //Arrays
 
 //Prefix
-vspeed=-5
+speed=5
+direction=90
 #endregion

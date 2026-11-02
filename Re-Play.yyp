@@ -40,6 +40,7 @@
     {"id":{"name":"obj_controller_menu","path":"objects/obj_controller_menu/obj_controller_menu.yy",},},
     {"id":{"name":"obj_controller_screen_shake","path":"objects/obj_controller_screen_shake/obj_controller_screen_shake.yy",},},
     {"id":{"name":"obj_pl","path":"objects/obj_pl/obj_pl.yy",},},
+    {"id":{"name":"obj_tiro_boss","path":"objects/obj_tiro_boss/obj_tiro_boss.yy",},},
     {"id":{"name":"obj_tiro","path":"objects/obj_tiro/obj_tiro.yy",},},
     {"id":{"name":"rm_shump","path":"rooms/rm_shump/rm_shump.yy",},},
     {"id":{"name":"scr_destroy_lindo","path":"scripts/scr_destroy_lindo/scr_destroy_lindo.yy",},},

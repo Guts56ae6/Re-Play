@@ -1,12 +1,16 @@
 #region Vars
 //normal
+vida=3
 vell=5
 cd_tiro=0
 cd_tiro_max=10
+cd_invencivel=0
+cd_invencivel_max=60
 //arrays
 
 //prefix
 inicia_efeito_mola()
+eb_create_inicio_efeito_branco()
 #endregion
 #region Metódos
 move=function(){
@@ -28,5 +32,12 @@ tiro=function(){
     }
     cd_tiro--
     
+}
+dano=function(){
+    if cd_invencivel<=0{
+        vida--
+        eb_metododano_timer_efeito_branco(5)
+        screenshake(5)
+    }
 }
 #endregion
