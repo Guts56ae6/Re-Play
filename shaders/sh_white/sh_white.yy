@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"sh_white",
+  "name":"sh_white",
+  "parent":{
+    "name":"shaders",
+    "path":"folders/Efeitos/shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

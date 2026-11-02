@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_efeito_mola",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_efeito_mola",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/Efeitos/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

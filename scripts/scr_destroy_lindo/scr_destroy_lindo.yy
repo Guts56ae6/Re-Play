@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_destroy_lindo",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_destroy_lindo",
+  "parent":{
+    "name":"scripts",
+    "path":"folders/Efeitos/scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
