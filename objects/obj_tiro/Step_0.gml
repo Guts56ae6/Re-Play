@@ -1,3 +1,3 @@
-if y>=-64{
+if y<=-64{
     instance_destroy()
 }
