@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_tiro",
-    "path":"sprites/spr_tiro/spr_tiro.yy",
+    "name":"spr_tiro_pl",
+    "path":"sprites/spr_tiro_pl/spr_tiro_pl.yy",
   },
   "spriteMaskId":null,
   "visible":true,
