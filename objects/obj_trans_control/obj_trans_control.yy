@@ -8,8 +8,8 @@
   "name":"obj_trans_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Objetos de controle",
+    "path":"folders/Objetos de controle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

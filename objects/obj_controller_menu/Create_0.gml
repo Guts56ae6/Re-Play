@@ -1,6 +1,6 @@
 #region variaveis
 //arrays
-menu=["Jogar","Tutorial","Sair",];
+menu=["Jogar","Sair",];
 //comuns
 atual=0;
 margem=30
@@ -23,11 +23,10 @@ controla_menu=function(){
 	#region indo para o jogo
 	if keyboard_check_pressed(vk_enter){
 		switch (atual) {
-			case 0:room_goto(rm_jogo)
+			case 0:create_tras(1)
 				break;
-			case 1:room_goto(rm_tutorial)
+			case 1:create_tras(2)
 				break;
-			case 2:game_end()
 		}
 		audio_play_sound(sfx_twoTone,0,0)
 	}
