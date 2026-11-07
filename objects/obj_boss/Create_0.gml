@@ -4,10 +4,10 @@ vida=100
 tempo=60
 cd_invencivel=0
 cd_invencivel_max=15
-estado="laser"
 cd_tiro=0
-cd_tiro_max=15
+cd_tiro_max=tempo
 vida_delay=vida
+acabo=false
 //Arrays
 
 //Prefix
@@ -26,54 +26,31 @@ dano=function(){
         cd_invencivel=cd_invencivel_max
         audio_play_sound(snfx_damage_boss,0,false)
     }
-}
-maquina_estado = function() {
-    switch (estado) {
-
-        case "idle": {
-            estado = "laser";
-            break;
-        }
-
-        case "tiro1": {
-
-            repeat (20) {
-                var _tiro = instance_create_layer(
-                    x, y, "tiros", obj_tiro_boss
-                );
-
-                _tiro.direction = irandom_range(225, 315);
-            }
-
-            estado = "idle";
-            break;
-        } 
-        case "laser": {
-        
-            // Cria o laser apenas uma vez
-            if (!laser_criado) {
-        
-                laser_id = instance_create_layer(
-                    x, 130, "tiros", obj_laser
-                );
-        
-                laser_criado = true;
-        
-                show_debug_message("Tentou criar o laser!");
-                show_debug_message("ID: " + string(laser_id));
-            }
-        
-            // Espera o laser ser destruído
-            else if (!instance_exists(laser_id)) {
-        
-                laser_id = noone;
-                laser_criado = false;
-                estado = "idle";
-        
-            }
-        
-            break;
-        }
+    if vida<=0{
+        instance_destroy()
     }
 }
+
+#endregion
+#region estados
+estado_parado=function(){
+    estado=estado_rajada_continua
+}
+estado_rajada=function(){
+    var _dir=0
+    repeat (12) {
+        var _tiro=instance_create_layer(x,y,"tiros",obj_tiro_boss)
+        _dir+=30
+        _tiro.direction=_dir
+    }
+    estado=estado_parado
+}
+estado_laser=function(){
+    
+}
+
+#endregion
+#region controle
+
+estado=estado_parado
 #endregion

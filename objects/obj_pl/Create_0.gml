@@ -13,7 +13,6 @@ velv=0
 //prefix
 inicia_efeito_mola()
 eb_create_inicio_efeito_branco()
-laser_id = noone;
 #endregion
 #region Metódos
 move=function(){
@@ -35,7 +34,7 @@ tiro=function(){
         instance_create_layer(x,y,"tiros",obj_tiro)
         cd_tiro=cd_tiro_max
         efeito_mola(0.8,1.2)
-        audio_play_sound(snfx_tiro_pl,0,false)
+        audio_play_sound(snfx_tiro_pl,0,false,0.5)
     }
     cd_tiro--
     
