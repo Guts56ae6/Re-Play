@@ -13,6 +13,7 @@ velv=0
 //prefix
 inicia_efeito_mola()
 eb_create_inicio_efeito_branco()
+laser_id = noone;
 #endregion
 #region Metódos
 move=function(){
