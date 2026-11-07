@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snfx_tiro_pl",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.3407483,
+  "exportDir":"",
+  "name":"snfx_tiro_pl",
+  "parent":{
+    "name":"Sound effects",
+    "path":"folders/Shump/Sound effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snfx_tiro_pl.wav",
+  "volume":1.0,
+}

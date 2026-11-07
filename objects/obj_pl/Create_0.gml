@@ -34,6 +34,7 @@ tiro=function(){
         instance_create_layer(x,y,"tiros",obj_tiro)
         cd_tiro=cd_tiro_max
         efeito_mola(0.8,1.2)
+        audio_play_sound(snfx_tiro_pl,0,false)
     }
     cd_tiro--
     
@@ -44,6 +45,7 @@ dano=function(){
         eb_metododano_timer_efeito_branco(5)
         screenshake(5)
         cd_invencivel=cd_invencivel_max
+        audio_play_sound(snfx_damage_pl,0,false)
     }
 }
 #endregion
