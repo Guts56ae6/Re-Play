@@ -1,2 +1,1 @@
-estado()
-alarm[0]=tempo
+estado=choose("pre laser","rajada")

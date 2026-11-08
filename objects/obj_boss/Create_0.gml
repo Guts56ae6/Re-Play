@@ -4,10 +4,9 @@ vida=100
 tempo=60
 cd_invencivel=0
 cd_invencivel_max=15
-cd_tiro=0
-cd_tiro_max=tempo
 vida_delay=vida
 acabo=false
+estado="parado"
 //Arrays
 
 //Prefix
@@ -15,7 +14,6 @@ eb_create_inicio_efeito_branco()
 inicia_efeito_mola()
 laser_id = noone;
 laser_criado = false;
-alarm[0]=tempo
 #endregion
 #region Metódos
 dano=function(){
@@ -30,27 +28,46 @@ dano=function(){
         instance_destroy()
     }
 }
-
-#endregion
-#region estados
-estado_parado=function(){
-    estado=estado_rajada_continua
+troca_sprite=function(spr){
+	if sprite_index!=spr{
+		sprite_index=spr;
+		image_index=0;
+    };
 }
-estado_rajada=function(){
-    var _dir=0
-    repeat (12) {
-        var _tiro=instance_create_layer(x,y,"tiros",obj_tiro_boss)
-        _dir+=30
-        _tiro.direction=_dir
+maquina_de_estados=function(){
+    switch (estado) {
+    	case "parado":{
+            troca_sprite(spr_boss_idle)
+            acabo=false
+            estado="aguardo"
+            alarm[0]=60
+            break;
+        }
+        case "rajada":{
+            troca_sprite(spr_boss_tiro)
+            var _dir=irandom_range(222,228)
+            repeat (7) {
+            	var _tiro=instance_create_layer(x,y,"tiros",obj_tiro_boss)
+                _tiro.direction=_dir
+                _dir+=15
+            }
+            if image_index<=30{
+                estado="parado"
+            }
+            break;
+        }
+        case "laser":{
+            screenshake(30)
+            if obj_controller_screen_shake.tremendo==false{
+                instance_create_layer(x,128,"tiros",obj_laser)
+            }
+            estado="aguardo laser"
+            break;
+        }
+        case "pre laser":{
+            troca_sprite(spr_boss_laser)
+            break;
+        }
     }
-    estado=estado_parado
 }
-estado_laser=function(){
-    
-}
-
-#endregion
-#region controle
-
-estado=estado_parado
 #endregion
