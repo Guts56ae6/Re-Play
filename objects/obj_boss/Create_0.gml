@@ -76,7 +76,7 @@ maquina_de_estados=function(){
         case "laser":{
             screenshake(30)
             if obj_controller_screen_shake.tremendo==false{
-                instance_create_layer(x,128,"tiros",obj_laser)
+                instance_create_layer(x,y,"tiros",obj_laser)
             }
             estado="aguardo laser"
             break;

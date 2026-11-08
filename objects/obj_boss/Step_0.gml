@@ -8,10 +8,14 @@ if estado=="pre laser" and image_index>=14 and acabo=false and sprite_index==spr
     image_index=14
     estado="laser"
 }
-if estado=="chegou"{
-    vida=lerp(vida,max_vida,0.1)  
+if (estado == "chegou") {
+    vida = lerp(vida, max_vida, 0.1);
+
+    // Quando a vida estiver quase cheia, ajusta ao máximo e inicia o alarme.
+    if (vida >= max_vida - 0.1) {
+        vida = max_vida;
+        audio_play_sound(snd_boss_shump,1,1)
+        estado = "parado";
+        alarm[0] = 60;
+    }
 }
-else if estado=="chegou" and vida=min(vida,100,max_vida){
-    alarm[0]=60
-}
-show_debug_message(estado)
