@@ -1,12 +1,14 @@
 #region Vars
 //Normal
-vida=100
+vida=0
+max_vida=100
 tempo=60
 cd_invencivel=0
 cd_invencivel_max=15
 vida_delay=vida
 acabo=false
-estado="parado"
+rajada_disparada=false
+estado="chegando"
 //Arrays
 
 //Prefix
@@ -36,6 +38,21 @@ troca_sprite=function(spr){
 }
 maquina_de_estados=function(){
     switch (estado) {
+        case "chegando":{
+            if y!=195{
+                y=lerp(y,195,0.1)
+            }
+            else if y>=195{
+                estado="chegou"
+                y=195
+            }
+            break;
+        }
+        case "chegou":{
+            if vida!=max_vida{
+                vida=lerp(vida,max_vida,0.1)
+            }
+        }
     	case "parado":{
             troca_sprite(spr_boss_idle)
             acabo=false
@@ -45,15 +62,21 @@ maquina_de_estados=function(){
         }
         case "rajada":{
             troca_sprite(spr_boss_tiro)
-            var _dir=irandom_range(222,228)
-            repeat (7) {
-            	var _tiro=instance_create_layer(x,y,"tiros",obj_tiro_boss)
-                _tiro.direction=_dir
-                _dir+=15
+            if !rajada_disparada {
+                repeat (2) {
+                    var _dir=irandom_range(222,228)
+                    repeat (7) {
+                    	var _tiro=instance_create_layer(x,y,"tiros",obj_tiro_boss)
+                        _tiro.direction=_dir
+                        _dir+=15
+                    }
+                }
+                rajada_disparada=true
             }
             if image_index>=30{
                 estado="parado"
-            }
+            
+        }
             break;
         }
         case "laser":{
