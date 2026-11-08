@@ -8,4 +8,10 @@ if estado=="pre laser" and image_index>=14 and acabo=false and sprite_index==spr
     image_index=14
     estado="laser"
 }
+if estado=="chegou"{
+    vida=lerp(vida,max_vida,0.1)   
+}
+else if estado=="chagou" and vida=max_vida{
+    alarm[0]=60
+}
 show_debug_message(estado)

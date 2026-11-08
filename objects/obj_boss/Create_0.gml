@@ -39,19 +39,13 @@ troca_sprite=function(spr){
 maquina_de_estados=function(){
     switch (estado) {
         case "chegando":{
-            if y!=195{
-                y=lerp(y,195,0.1)
-            }
-            else if y>=195{
-                estado="chegou"
-                y=195
+            cd_invencivel=cd_invencivel_max
+            y = min(y + 2, 195);
+            if y >= 195 {
+                y = 195;
+                estado = "chegou";
             }
             break;
-        }
-        case "chegou":{
-            if vida!=max_vida{
-                vida=lerp(vida,max_vida,0.1)
-            }
         }
     	case "parado":{
             troca_sprite(spr_boss_idle)
