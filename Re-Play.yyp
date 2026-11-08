@@ -93,8 +93,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_shump","path":"rooms/rm_shump/rm_shump.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_shump","path":"rooms/rm_shump/rm_shump.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

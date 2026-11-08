@@ -57,13 +57,11 @@ maquina_de_estados=function(){
         case "rajada":{
             troca_sprite(spr_boss_tiro)
             if !rajada_disparada {
-                repeat (2) {
-                    var _dir=irandom_range(222,228)
-                    repeat (7) {
-                    	var _tiro=instance_create_layer(x,y,"tiros",obj_tiro_boss)
-                        _tiro.direction=_dir
-                        _dir+=15
-                    }
+                var _dir=irandom_range(222,228)
+                repeat (14) {
+                    var _tiro=instance_create_layer(x,y,"tiros",obj_tiro_boss)
+                    _tiro.direction=_dir
+                    _dir+=7.5
                 }
                 rajada_disparada=true
             }
@@ -76,7 +74,8 @@ maquina_de_estados=function(){
         case "laser":{
             screenshake(30)
             if obj_controller_screen_shake.tremendo==false{
-                instance_create_layer(x,y,"tiros",obj_laser)
+                var _laser = instance_create_layer(x,y, "tiros", obj_laser);
+                _laser.boss_id = id;
             }
             estado="aguardo laser"
             break;
