@@ -51,7 +51,7 @@ maquina_de_estados=function(){
                 _tiro.direction=_dir
                 _dir+=15
             }
-            if image_index<=30{
+            if image_index>=30{
                 estado="parado"
             }
             break;
