@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"boss",
-    "path":"folders/Shump/Sprites/boss.yy",
+    "name":"Sprite geral",
+    "path":"folders/Sprite geral.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

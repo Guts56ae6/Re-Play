@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
-    "path":"folders/Shump/Objetos.yy",
+    "path":"folders/Jogo_1_Shump/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

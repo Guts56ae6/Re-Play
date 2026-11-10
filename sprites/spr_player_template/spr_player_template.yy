@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"player",
-    "path":"folders/Shump/Sprites/player.yy",
+    "name":"Sprite geral",
+    "path":"folders/Sprite geral.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
