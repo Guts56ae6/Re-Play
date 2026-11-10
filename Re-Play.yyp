@@ -51,11 +51,13 @@
   "resources":[
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"obj_boss_shump","path":"objects/obj_boss_shump/obj_boss_shump.yy",},},
+    {"id":{"name":"obj_chao_plataforma","path":"objects/obj_chao_plataforma/obj_chao_plataforma.yy",},},
     {"id":{"name":"obj_colision","path":"objects/obj_colision/obj_colision.yy",},},
     {"id":{"name":"obj_controller_menu","path":"objects/obj_controller_menu/obj_controller_menu.yy",},},
     {"id":{"name":"obj_controller_screen_shake","path":"objects/obj_controller_screen_shake/obj_controller_screen_shake.yy",},},
     {"id":{"name":"obj_laser_shump","path":"objects/obj_laser_shump/obj_laser_shump.yy",},},
     {"id":{"name":"obj_part_tiro_shump","path":"objects/obj_part_tiro_shump/obj_part_tiro_shump.yy",},},
+    {"id":{"name":"obj_pl_plataforma","path":"objects/obj_pl_plataforma/obj_pl_plataforma.yy",},},
     {"id":{"name":"obj_pl_shump","path":"objects/obj_pl_shump/obj_pl_shump.yy",},},
     {"id":{"name":"obj_tiro_boss_shump","path":"objects/obj_tiro_boss_shump/obj_tiro_boss_shump.yy",},},
     {"id":{"name":"obj_tiro_pl_shump","path":"objects/obj_tiro_pl_shump/obj_tiro_pl_shump.yy",},},
