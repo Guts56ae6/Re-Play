@@ -56,6 +56,7 @@
     {"id":{"name":"obj_controller_menu","path":"objects/obj_controller_menu/obj_controller_menu.yy",},},
     {"id":{"name":"obj_controller_screen_shake","path":"objects/obj_controller_screen_shake/obj_controller_screen_shake.yy",},},
     {"id":{"name":"obj_item_plataforma","path":"objects/obj_item_plataforma/obj_item_plataforma.yy",},},
+    {"id":{"name":"obj_item_spawner","path":"objects/obj_item_spawner/obj_item_spawner.yy",},},
     {"id":{"name":"obj_laser_shump","path":"objects/obj_laser_shump/obj_laser_shump.yy",},},
     {"id":{"name":"obj_part_tiro_shump","path":"objects/obj_part_tiro_shump/obj_part_tiro_shump.yy",},},
     {"id":{"name":"obj_pl_plataforma","path":"objects/obj_pl_plataforma/obj_pl_plataforma.yy",},},
