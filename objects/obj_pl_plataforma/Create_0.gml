@@ -17,6 +17,10 @@ interact=noone;
 item=0
 encosto=false
 encosto_id=noone
+atira=noone
+cd_tiro=0
+cd_tiro_max=15
+vel_tiro=3
 //arrays
 colission=[obj_chao_plataforma]
 //prefix
@@ -29,6 +33,7 @@ pega_input=function(){
     right=keyboard_check(ord("D"))
     jump=keyboard_check(ord("W"))
     interact=keyboard_check_pressed(vk_space)
+    atira=keyboard_check(ord("J"))
 }
 checa_chao=function(){
     chao=place_meeting(x,y+1,colission)
@@ -50,6 +55,12 @@ aplica_velocidade=function(){
     if encosto{
         encosto_id=instance_place(x,y,obj_item_plataforma)
     }
+    if cd_tiro<=0 and atira and item>0 and velh==0{
+        var _tiro=instance_create_layer(x,y-sprite_height/2,"tiros",obj_tiro_pl_plataforma)
+        _tiro.hspeed=dir*vel_tiro
+        item--
+        cd_tiro=cd_tiro_max
+    }
 
 }
 mov=function(){
@@ -65,5 +76,9 @@ pega_item=function(){
 }
 
 #region máquina de estados
-
+anda=function(){
+    if velh<0 dir=-1
+    else if velh>0 dir=1
+    image_xscale=dir
+}
 #endregion
