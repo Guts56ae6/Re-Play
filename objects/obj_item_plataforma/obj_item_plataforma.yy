@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_item_coletavel_plataforma",
-    "path":"sprites/spr_item_coletavel_plataforma/spr_item_coletavel_plataforma.yy",
+    "name":"spr_item_coletavel_template",
+    "path":"sprites/spr_item_coletavel_template/spr_item_coletavel_template.yy",
   },
   "spriteMaskId":null,
   "visible":true,

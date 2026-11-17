@@ -56,7 +56,7 @@ aplica_velocidade=function(){
         encosto_id=instance_place(x,y,obj_item_plataforma)
     }
     if cd_tiro<=0 and atira and item>0 and velh==0{
-        var _tiro=instance_create_layer(x,y-sprite_height/2,"tiros",obj_tiro_pl_plataforma)
+        var _tiro=instance_create_layer(x,y-sprite_height/2,"tiros",obj_tiro_plataforma)
         _tiro.hspeed=dir*vel_tiro
         item--
         cd_tiro=cd_tiro_max

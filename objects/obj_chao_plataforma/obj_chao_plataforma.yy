@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chao_plataforma",
-    "path":"sprites/spr_chao_plataforma/spr_chao_plataforma.yy",
+    "name":"spr_chao_template",
+    "path":"sprites/spr_chao_template/spr_chao_template.yy",
   },
   "spriteMaskId":null,
   "visible":true,

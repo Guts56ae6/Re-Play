@@ -1,0 +1,1 @@
+eb_draw_final_efeito_branco(true)
